@@ -1,0 +1,40 @@
+.card {
+    box-shadow: 0 8px 16px 0 rgba(37, 3, 3, 0.2);
+    width: 30%;
+    height: 650px;
+    border-radius: 8px;
+    margin: 22px;
+    background-color: cornsilk;
+    float: left;
+  }
+  
+  
+  .card img {
+    border-radius: 5px 5px 0 0;
+    width: 80%;
+    height: 60%;
+    margin: 5% 1% 5% 1%;
+  }
+  
+  .detalle {
+    padding: 2px 2px;
+  }
+  
+  .detalle h4{
+    font-family: serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: darkslategray;
+  }
+  .detalle p{
+    font-family: serif;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(26, 23, 23);
+  }
+  .detalle a{
+    font-family: fantasy;
+    font-size: 22px;
+    font-weight: 200;
+    color: rgb(6, 27, 6);
+  }
