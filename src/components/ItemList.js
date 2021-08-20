@@ -1,7 +1,7 @@
-import Item from './Item.js';
-import logo from "../assets/img/logo.PNG";
+//import Item from './Item.js';
 import React, { useState, useEffect } from "react";
 import "./itemListStyle.css";
+import ItemDetail from './ItemDetail.js';
 
 const ItemList =function(props){
     const [productos, setProductos] = useState([]);
@@ -13,7 +13,7 @@ const ItemList =function(props){
     }, []);
     return <div className="items">
         {productos.map((prod) => {
-            return (<Item nombre={prod.title} descripcion={prod.title} precio={prod.userId} stock={prod.id} img={logo}/>)
+            return (<ItemDetail producto={prod}/>)
         })
     }
     </div>

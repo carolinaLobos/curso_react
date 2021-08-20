@@ -1,23 +1,23 @@
-.card {
-    box-shadow: 0 8px 16px 0 rgba(37, 3, 3, 0.2);
-    width: 20%;
-    height: 400px;
-    border-radius: 8px;
-    margin: 25px;
+.det {
+    margin: 5px;
     background-color: cornsilk;
-    float: left;
+    
   }
-  
-  
-  .card img {
+ 
+  .det img {
+    float: right;  
     border-radius: 5px 5px 0 0;
-    width: 80%;
+    width: 40%;
     height: 60%;
-    margin: 5% 1% 5% 1%;
+    margin: 2% 2% 2% 2%;
   }
   
   .detalle {
-    padding: 2px 2px;
+    float:right;
+    margin: 6% 2% 2% 2%;
+    width: 40%;
+    height: 60%;
+    
   }
   
   .detalle h4{
