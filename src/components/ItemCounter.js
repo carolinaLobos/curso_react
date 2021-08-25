@@ -1,5 +1,5 @@
 import React from "react";
-import "./componentStyles.css";
+import "./componentsStyles/componentStyles.css";
 import { Button } from 'semantic-ui-react'
 
 const ItemCounter =({stock}) =>{

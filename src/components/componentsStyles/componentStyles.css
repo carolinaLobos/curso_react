@@ -23,7 +23,7 @@
   .foto {
     width: auto;
     display:inline-flex;
-    background-image: url('../assets/img/fondo-gold.jpg');
+    background-image: url('../../assets/img/fondo-gold.jpg');
   }
 
   .foto img {

@@ -1,4 +1,4 @@
-import './componentStyles.css';
+import './componentsStyles/componentStyles.css';
 
 const CartWidget =function(){
     return <div className="cartWidget">

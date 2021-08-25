@@ -1,16 +1,19 @@
 
-import "./itemStyle.css";
-import logo from "../assets/img/logo.PNG";
+import "./componentsStyles/itemStyle.css";
+//import logo from "../assets/img/logo.PNG";
+import {Link} from "react-router-dom";
 
 const Item =function({producto}){
     
     return (
+        <Link to={`item/${producto.login}`}>
         <div className="card" >
-        <img src={logo} alt=""/>
+        <img src={producto.avatar_url} alt=""/>
         <div className="detalle">
-            <h4>{producto.title}</h4> 
+            <h4>{producto.login}</h4> 
         </div>
     </div>
+    </Link>
     )
 }
 export default Item;
