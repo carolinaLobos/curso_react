@@ -3,7 +3,8 @@ import mainImage from "../assets/img/main_picture1.jpg"
 import mainImage2 from "../assets/img/main_picture.jpg"
 import mainImage3 from "../assets/img/main_picture3.jpg";
 import CartWidget from './CartWidget.js';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+
 const NavBar =function() {
 
     return <nav className="nav">
@@ -18,10 +19,10 @@ const NavBar =function() {
     
       <ul>
       
-      <Link to="/"><li href="#home" >Inicio</li></Link>
-      <Link to="/category/productos"><li>Productos</li></Link>
-      <Link to="/category/ofertas"><li>Ofertas</li></Link>
-      <Link to="/category/ultimos"><li>Ultimos</li></Link>
+      <Link to="/"><li>Inicio</li></Link>
+      <Link to="/category/0"><li>Productos</li></Link>
+      <Link to="/category/25"><li>Ofertas</li></Link>
+      <Link to="/category/37"><li>Ultimos</li></Link>
       
       <li><CartWidget/> </li>
        </ul>

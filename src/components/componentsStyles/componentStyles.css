@@ -7,6 +7,7 @@
   background-color: rgb(128, 7, 57);
   overflow: hidden;
   min-width:auto;
+  height: 120px;
   
 }
 @media screen and (max-width: 800px){
@@ -35,11 +36,13 @@
 }
 .topnav li{
   float:inline-end;
-  display:inline-flex;
+  display:inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding:20px;
-  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1%;
+  padding-inline-start: 4%;
   font-size: 22px;
 }
 
@@ -53,9 +56,11 @@
   background-color: #56796c;
   color: white;
 }
-.topnav  ul img {
+.topnav  img {
   display:initial;
   object-fit:fill;
+  margin-left: 20px;
+  margin-right: 20px;
   width:150px;
   height:150px
 }
@@ -64,12 +69,32 @@
   display:none;
 }
 
-.saludo h1{
-  color:rgb(65, 58, 71);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 44px;
+.saludo {
+  overflow: hidden;
+  padding: 8%;
 }
-
+.logo{
+  width: 30%;
+  margin-right: 10%;
+  display: inline-flex;
+}
+.presentacion {
+  width: 55%;
+  position: absolute;
+  top: 98%;
+  display: inline-flex;
+ 
+  
+}
+.presentacion h1{
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color:rgb(65, 58, 71);
+}
+.productos{
+  margin-left: 2%;
+  padding:3%
+}
 .fa-shopping-cart{
   font-size: 2.25em;
 }

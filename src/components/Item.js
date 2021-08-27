@@ -1,6 +1,5 @@
 
 import "./componentsStyles/itemStyle.css";
-//import logo from "../assets/img/logo.PNG";
 import {Link} from "react-router-dom";
 
 const Item =function({producto}){

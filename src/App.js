@@ -15,10 +15,10 @@ class App extends Component {
       <Route exact path="/">
         <ItemListContainer/>
       </Route>
-      <Route path="/category/:id">
+      <Route path="/category/:idCategoria">
         <ItemListContainer/>
       </Route>
-      <Route path="/item/:itemId">
+      <Route path="/category/item/:itemId">
         <ItemDetailContainer/>
       </Route>
   
