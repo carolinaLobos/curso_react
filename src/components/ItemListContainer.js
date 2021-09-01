@@ -17,7 +17,7 @@ const ItemListContainer =function(){
     
         if(!idCategoria){
             return <div className="saludo">
-                <img className="logo" src={logo} />
+                <img className="logo" src={logo} alt=""/>
                 <div className="presentacion">
                 <h1>Aquí encontraras el estilo que buscas, diferente, vanguardista, clásico y cómodo.....
                 Vístete sin miedo, sin culpas, sin edad o rol.<br/> Las marcas del mundo directo a tu puerta.</h1>

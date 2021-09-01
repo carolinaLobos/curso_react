@@ -1,6 +1,7 @@
 import React from "react";
 import "./componentsStyles/componentStyles.css";
 import { Button } from 'semantic-ui-react'
+import ItemDetail from './ItemDetail';
 
 const ItemCounter =({stock}) =>{
     const inicial=1;
@@ -9,7 +10,7 @@ const ItemCounter =({stock}) =>{
     const agregar = () => {
         if(stock>contador)
             setContador(contador +1);
-
+        
     };
 
     const descontar = () => {
@@ -26,4 +27,4 @@ const ItemCounter =({stock}) =>{
     )
 
 }
-export default ItemCounter;
+//export default ItemCounter;

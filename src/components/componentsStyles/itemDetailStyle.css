@@ -22,19 +22,49 @@
   
   .detalle h4{
     font-family: serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: darkslategray;
   }
   .detalle p{
     font-family: serif;
-    font-size: 20px;
+    font-size: 24px;
     font-style: italic;
-    color: rgb(26, 23, 23);
+    color: rgb(146, 58, 58);
   }
   .detalle a{
     font-family: fantasy;
     font-size: 22px;
     font-weight: 200;
     color: rgb(6, 27, 6);
+  }
+  .btnComprar{
+    height: 60px;
+    width: 140px;
+    background-color: rgb(14, 121, 14);
+    margin-top: 20px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  .btnTerminarCompra{
+    height: 60px;
+    width: 140px;
+    background-color: rgb(139, 137, 3);
+    margin: 20px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  .btnModificar{
+    height: 60px;
+    width: 140px;
+    background-color: rgb(177, 41, 0);
+    margin: 20px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 8px;
   }
