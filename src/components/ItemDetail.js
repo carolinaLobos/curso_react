@@ -2,11 +2,12 @@ import { Button } from "semantic-ui-react";
 import "./componentsStyles/itemDetailStyle.css";
 import ItemCounter from './ItemCounter.js';
 import React, { useState } from "react";
+import { useCartContext } from "../context/CartContext";
 
 const ItemDetail = function({producto}){
 
     const [count, setCount] = useState(0);
-   
+    const {addToCart} = useCartContext();
     const agregar = (contador) => {
         setCount(contador);               
     };
@@ -15,7 +16,9 @@ const ItemDetail = function({producto}){
         setCount(0);
     }
     function terminarCompra(){
-        alert(`compra terminada , compraste ${count} de ${producto.login} `);
+        addToCart(producto, count)
+        //alert(`compra terminada , compraste ${count} de ${producto.login} `);
+        
 
     }
     return (<div className="det">
