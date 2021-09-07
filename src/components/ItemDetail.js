@@ -1,51 +1,21 @@
 import { Button } from "semantic-ui-react";
 import "./componentsStyles/itemDetailStyle.css";
-//import ItemCounter from './ItemCounter.js';
+import ItemCounter from './ItemCounter.js';
 import React, { useState } from "react";
 
 const ItemDetail = function({producto}){
 
-    
-    const [comprar, setComprar]= useState(false);
-    
-    const ItemCounter =({estado}) =>{
-        
-        const inicial=1;
-        const stock=producto.id;
-        const [contador, setContador] = useState(inicial);
-        
-        const agregar = () => {
-            if(stock>contador){
-                setContador(contador+1);
-                
-            }
-            
-        };
-    
-        const descontar = () => {
-            if(inicial<contador){
-                setContador(contador -1);
-               
-            }
-        };
-    
-        return (!estado ? <div className="contador">
-                <Button onClick={descontar}>-</Button>
-                <span> {contador} </span>
-                <Button onClick={agregar}>+</Button></div>
-                :<p>Cantidad del pedido: {contador}</p>
-        )
-    
-    }
-    function comprarEvent(){
-        setComprar(true); 
-           
-    }
+    const [count, setCount] = useState(0);
+   
+    const agregar = (contador) => {
+        setCount(contador);               
+    };
+   
     function modificarEvent(){
-        setComprar(false);
+        setCount(0);
     }
     function terminarCompra(){
-        alert(`compra terminada , compraste  ${producto.login} `);
+        alert(`compra terminada , compraste ${count} de ${producto.login} `);
 
     }
     return (<div className="det">
@@ -57,9 +27,10 @@ const ItemDetail = function({producto}){
             <p>Stock: {producto.id}</p>
             
             
-            {comprar ? <div> <ItemCounter estado={comprar}/><Button className="btnTerminarCompra" onClick={terminarCompra}>Terminar mi compra</Button>
+            {count!==0 ? <div> <div className="cantidad">Cantidad solicitada: {count}</div>
+            <Button className="btnTerminarCompra" onClick={terminarCompra}>Terminar mi compra</Button>
             <Button className="btnModificar" onClick={modificarEvent}>Modificar cantidad</Button></div>:<div>
-            <ItemCounter estado={comprar}/><Button className="btnComprar" onClick={comprarEvent}>COMPRAR</Button>
+            <ItemCounter stock={producto.id} onAdd={agregar}/>
             </div>}
             
            
