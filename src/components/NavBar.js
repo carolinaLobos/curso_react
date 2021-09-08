@@ -24,7 +24,7 @@ const NavBar =function() {
       <Link to="/category/25"><li>Ofertas</li></Link>
       <Link to="/category/37"><li>Ultimos</li></Link>
       
-      <li><CartWidget/> </li>
+      <Link to="/cart"><li><CartWidget/> </li></Link>
        </ul>
       
   </div>

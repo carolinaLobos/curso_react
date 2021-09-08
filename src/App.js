@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import './App.css';
 
-import NavBar from './components/NavBar'; 
+import NavBar from './components/NavBar';
+import Cart from './components/Cart'; 
 import ItemListContainer from './components/ItemListContainer'; 
 import ItemDetailContainer from './components/ItemDetailContainer'; 
 import {BrowserRouter, Route} from "react-router-dom"
@@ -22,7 +23,9 @@ class App extends Component {
       <Route path="/category/item/:itemId">
         <ItemDetailContainer/>
       </Route>
-  
+      <Route path="/cart">
+        <Cart/>
+      </Route>
     </switch>
     </BrowserRouter>
     </CartProvider>

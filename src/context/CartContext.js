@@ -20,9 +20,11 @@ export const CartProvider = ({children})=>{
                 console.log(cart)    
     };
     const clear = () =>setCart([]);
+    
     const isInCart = (id) =>cart.some((item)=> item.id===id);
+    
     const removeItem = (itemId)=>{
-        setCart(cart.filter((elem)=> elem.item.id!== itemId))
+        setCart(cart.filter((elem)=> elem.id!== itemId))
     }
     return (
         <CartContext.Provider value={{cart, clear, isInCart, removeItem, addToCart}}>
