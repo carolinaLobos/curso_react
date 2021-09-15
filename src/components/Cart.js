@@ -19,14 +19,14 @@ const Cart = function(){
             {cart.map((prod) => {
                 acum=(prod.quantity*prod.id)+acum;
                 return (
-                <tr><td>{prod.id}</td>
+                <tr><td>${prod.id}</td>
                 <td><img src="{prod.avatar_url}" alt="img"/></td>        
                 <td>{prod.url}</td>
                 <td>{prod.quantity}</td>
-                <td>{prod.id*prod.quantity }</td>
+                <td>${prod.id*prod.quantity }</td>
                 <td> <button className="btnEliminar"  type="button" onClick={() => eliminar(prod.id)}>Eliminar</button></td>
                 </tr>)})}
-                <tr><td> </td><td> </td><td> </td><td> </td><td>TOTAL COMPRA</td><td>{acum}</td></tr>
+                <tr><td> </td><td> </td><td> </td><td> </td><td>TOTAL COMPRA</td><td>${acum}</td></tr>
         </table>
     </div>)
 }

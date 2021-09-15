@@ -20,10 +20,11 @@ const NavBar =function() {
       <ul>
       
       <Link to="/"><li>Inicio</li></Link>
-      <Link to="/category/0"><li>Productos</li></Link>
-      <Link to="/category/25"><li>Ofertas</li></Link>
-      <Link to="/category/37"><li>Ultimos</li></Link>
-      
+      <Link to="/category/todos"><li>Productos</li></Link>
+      <Link to="/category/otoño"><li>Otoño</li></Link>
+      <Link to="/category/invierno"><li>Invierno</li></Link>
+      <Link to="/category/primavera"><li>Primavera</li></Link>
+      <Link to="/category/verano"><li>Verano</li></Link>
       <Link to="/cart"><li><CartWidget/> </li></Link>
        </ul>
       

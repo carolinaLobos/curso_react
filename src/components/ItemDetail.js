@@ -22,10 +22,10 @@ const ItemDetail = function({producto}){
     return (<div className="det">
         
         <div className="detalle">
-            <h4>{producto.login}</h4> 
-            <p>{producto.url}</p> 
-            <p>${producto.id}.000</p>
-            <p>Stock: {producto.id}</p>
+            <h4>{producto.nombre}</h4> 
+            <p>{producto.descripcion}</p> 
+            <p>${producto.precio}</p>
+            <p>Stock: {producto.stock}</p>
             
             
             {count!==0 ? <div> <div className="cantidad">Cantidad solicitada: {count}</div>
@@ -37,7 +37,7 @@ const ItemDetail = function({producto}){
            
             
         </div>
-        <img src={producto.avatar_url} alt=""/>
+        <img src={producto.img} alt=""/>
         
     </div>)
 }
